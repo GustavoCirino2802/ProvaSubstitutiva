@@ -1,0 +1,41 @@
+### Cadastrar Aluno
+POST http://localhost:5244/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Margarete",
+    "sobrenome": "Cirino"
+}
+
+### Listar Aluno
+GET http://localhost:5244/api/aluno/listar
+
+### Buscar Aluno
+GET http://localhost:5244/api/aluno/buscar/3
+
+### Cadastrar IMC
+POST http://localhost:5244/api/imc/cadastrar
+Content-Type: application/json
+
+{
+    "peso" : 120,
+    "altura" : 1.95,
+    "AlunoId" : 3
+}
+
+### Listar IMC
+GET http://localhost:5244/api/imc/listar
+
+### Buscar IMC
+GET http://localhost:5244/api/imc/listarporaluno/1
+
+### Alterar IMC
+PUT http://localhost:5244/api/imc/alterar/1
+Content-Type: application/json
+
+{
+    "altura": 2.0,
+    "peso": 100
+}
+
+
